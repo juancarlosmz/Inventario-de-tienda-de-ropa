@@ -1,4 +1,5 @@
 import { Router } from "express";
+import otherController from "../controllers/otherController";
 
 class OtherRoutes{
     router: Router = Router();
@@ -8,7 +9,7 @@ class OtherRoutes{
     }
 
     config(): void{
-        this.router.get('/', (req, res) => res.send('Other'));
+        this.router.get('/', otherController.index);
     }
 }
 
