@@ -6,7 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const database_1 = __importDefault(require("../database"));
 class OtherController {
     index(req, res) {
-        database_1.default.query('SELECT * FROM Productos');
+        database_1.default.query('DESCRIBE Productos');
+        res.json('productos');
         //res.send('Other');
     }
 }

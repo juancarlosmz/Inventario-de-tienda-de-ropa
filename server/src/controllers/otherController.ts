@@ -3,7 +3,8 @@ import pool from '../database';
 
 class OtherController{
     public index (req: Request, res: Response) {
-        pool.query('SELECT * FROM Productos');
+        pool.query('DESCRIBE Productos');
+        res.json('productos');
         //res.send('Other');
     } 
 }
