@@ -6,6 +6,7 @@
  # Servidor node ruta: \Inventario-de-tienda-de-ropa\server
   
   npm run dev
+  #
   npm run build
   
   # puerto del api: http://localhost:3000/api
