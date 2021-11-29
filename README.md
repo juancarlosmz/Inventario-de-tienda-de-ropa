@@ -3,7 +3,7 @@
  
 # Indicaciones
  
- # NodeJs Servidor node ruta: \Inventario-de-tienda-de-ropa\server
+ # NodeJs Servidor ruta: \Inventario-de-tienda-de-ropa\server
   
   npm run dev
   #
