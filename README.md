@@ -9,9 +9,11 @@
   #
   npm run build
   
-  # puerto del api: http://localhost:3000/api
+  ruta del backend: http://localhost:3000/api
   
  # Angular Front end ruta: \Inventario-de-tienda-de-ropa\client
   
   ng serve
+  
+  ruta del frondend: http://localhost:4200/
  
