@@ -12,7 +12,7 @@ class Server{
         this.routes();
     }
     config(): void{
-        this.app.set('port', process.env.PORT || 3000);
+        this.app.set('port', process.env.PORT || 3000 );
         this.app.use(morgan('dev'));
         this.app.use(cors());
         this.app.use(express.json());
@@ -20,7 +20,7 @@ class Server{
     }
     routes(): void{
         this.app.use('/', indexRoutes);
-        this.app.use('/otros', otherRoutes);
+        this.app.use('/api', otherRoutes);
     }
     start(): void{
         this.app.listen(this.app.get('port'), () => {

@@ -11,7 +11,11 @@ class OtherRoutes {
         this.config();
     }
     config() {
-        this.router.get('/', otherController_1.default.index);
+        this.router.get('/', otherController_1.default.list);
+        this.router.get('/:id', otherController_1.default.getOne);
+        this.router.post('/', otherController_1.default.create);
+        this.router.put('/:id', otherController_1.default.update);
+        this.router.delete('/:id', otherController_1.default.delete);
     }
 }
 const otherRoutes = new OtherRoutes();

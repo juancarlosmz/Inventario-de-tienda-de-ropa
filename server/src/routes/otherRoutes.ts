@@ -9,7 +9,11 @@ class OtherRoutes{
     }
 
     config(): void{
-        this.router.get('/', otherController.index);
+        this.router.get('/', otherController.list);
+        this.router.get('/:id', otherController.getOne);
+        this.router.post('/', otherController.create);
+        this.router.put('/:id', otherController.update);
+        this.router.delete('/:id', otherController.delete);
     }
 }
 
